@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>cron</title>
+<script type="text/javascript"
+        src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+
+<script type="text/javascript" src="cron/jquery-cron.js"></script>
+
+<link type="text/css" href="cron/jquery-cron.css" rel="stylesheet" />
+</head>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#selector').cron({ // apply cron with default options
+    	effectOpts: {
+    		initial: "42 3 * * 5",
+    		openEffect: "fade",
+    		openSpeed: "slow",
+
+    	}
+
+    }); 
+});
+</script>
+<body>
+<!--- somewhere within <body> -->
+<div id='selector'></div>
+</body>
+</html>
